@@ -3,9 +3,9 @@ from aiogram.fsm.storage.redis import RedisStorage
 from tortoise import Tortoise
 
 
-from tgbot.config import settings
-from tgbot.db.db import TORTOISE_ORM
-from tgbot.services import broadcaster
+from app.config import settings
+from app.db.db import TORTOISE_ORM
+from app.services import broadcaster
 
 
 

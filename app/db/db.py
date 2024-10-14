@@ -1,4 +1,4 @@
-from tgbot.config import settings
+from app.config import settings
 
 TORTOISE_ORM = {
     "connections": {

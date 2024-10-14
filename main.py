@@ -7,7 +7,7 @@ from aiogram import Bot
 from aiogram.methods import DeleteWebhook
 
 from loader import dp, on_startup
-from tgbot.config import settings
+from app.config import settings
 
 from tortoise import Tortoise
 

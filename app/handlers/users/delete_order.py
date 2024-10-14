@@ -3,7 +3,7 @@ from pyexpat.errors import messages
 from aiogram import F, Router, Bot
 from aiogram.types import CallbackQuery
 
-from tgbot.config import settings
+from app.config import settings
 
 user_router = Router()
 
