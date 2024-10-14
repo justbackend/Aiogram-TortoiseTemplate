@@ -1,0 +1,6 @@
+
+UPDATE "order" SET "to_region_id" = 1 WHERE "to_region_id" IS NULL;
+
+ALTER TABLE "order" ALTER COLUMN "from_region_id" SET NOT NULL;
+
+updating null values

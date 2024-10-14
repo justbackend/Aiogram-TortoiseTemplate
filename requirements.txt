@@ -1,0 +1,10 @@
+aerich
+aiogram
+asyncpg
+betterlogging
+pydantic-settings
+redis
+tortoise-orm
+pydantic
+pydantic_core
+Booktype
