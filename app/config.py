@@ -1,3 +1,5 @@
+from typing import List
+
 from pydantic import computed_field, PostgresDsn
 from pydantic_core import MultiHostUrl
 from pydantic_settings import BaseSettings
@@ -5,8 +7,6 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     BOT_TOKEN: str
-    CHATGPT_KEY: str
-    LORRY_CHAT_ID: str
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     POSTGRES_HOST: str
@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     redis_host: str = "localhost"
     redis_port: int = 6379
     redis_db: int = 5
+    ADMINS: List[int]
     DEBUG: int
     DEBUG_TOKEN: str
 

@@ -52,7 +52,7 @@ async def main():
         token = settings.BOT_TOKEN
 
     bot = Bot(token=token, default=DefaultBotProperties(parse_mode='HTML'))
-    await on_startup(bot, [6050173548])
+    await on_startup(bot, settings.ADMINS)
 
     await bot(DeleteWebhook(drop_pending_updates=True))
     try:
